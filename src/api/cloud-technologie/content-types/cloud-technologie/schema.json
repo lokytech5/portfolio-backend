@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cloud_technologies",
+  "info": {
+    "singularName": "cloud-technologie",
+    "pluralName": "cloud-technologies",
+    "displayName": "Cloud Technologie",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

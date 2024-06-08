@@ -1,6 +1,6 @@
 # 🚀 Portfolio Project Backend
-![HomePage](public/uploads/Screenshot3.png)
-![ContentPage](public/uploads/Screenshot12.png)
+![HomePage](public/images/Screenshot3.png)
+![ContentPage](public/images/Screenshot12.png)
 
 
 This is the backend for my portfolio project, built using Strapi CMS. It manages content such as projects, about me, resume details, and contact messages.

@@ -1,12 +1,12 @@
-
 services:
-   strapi:
+  strapi:
     build: .
     container_name: strapi
     env_file:
       - .env
     volumes:
       - ./backend:/srv/app
+      - ./.tmp:/srv/app/.tmp
     ports:
       - '1337:1337'
     networks:

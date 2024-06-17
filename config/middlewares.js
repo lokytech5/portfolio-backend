@@ -20,7 +20,7 @@ module.exports = ({ env }) => [
       enabled: true,
       origin: [
         'http://localhost:3000',  // Loacl development URL
-        'http://13.53.193.19:3000' //Production URL
+        'https://app.egetwhy.club', //Production URL
       ],
     },
   },

@@ -19,9 +19,9 @@ module.exports = ({ env }) => [
     config: {
       enabled: true,
       origin: [
-        'http://localhost:3000',  // Loacl development URL
-        'https://app.egetwhy.club', //Production URLS
-        'https://portfolio-project-rho-gold.vercel.app/', // Production URL for frontend
+        'http://localhost:3000',  // Local development URL
+        'https://app.egetwhy.club', // Production URL
+        'https://portfolio-project-rho-gold.vercel.app', // Production URL for frontend
       ],
     },
   },

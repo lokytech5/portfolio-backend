@@ -6,6 +6,7 @@ services:
       - .env
     volumes:
       - ./backend:/srv/app
+      - ./.tmp:/srv/app/.tmp
       - ./data/uploads:/srv/app/public/uploads
       - ./data:/srv/app/data
     ports:

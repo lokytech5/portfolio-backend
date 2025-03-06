@@ -1018,6 +1018,45 @@ export interface ApiFrameworkFramework extends Schema.CollectionType {
   };
 }
 
+export interface ApiProductProduct extends Schema.CollectionType {
+  collectionName: 'products';
+  info: {
+    singularName: 'product';
+    pluralName: 'products';
+    displayName: 'Product';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    name: Attribute.String;
+    description: Attribute.Text;
+    price: Attribute.Float;
+    image: Attribute.Media;
+    quantity: Attribute.Integer;
+    stock: Attribute.Integer;
+    discount: Attribute.Float;
+    colour: Attribute.String;
+    size: Attribute.Enumeration<['S', 'M', 'L', 'XL']>;
+    category: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::product.product',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::product.product',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiProgrammingLanguageProgrammingLanguage
   extends Schema.CollectionType {
   collectionName: 'programming_languages';
@@ -1111,6 +1150,7 @@ declare module '@strapi/types' {
       'api::education.education': ApiEducationEducation;
       'api::experience.experience': ApiExperienceExperience;
       'api::framework.framework': ApiFrameworkFramework;
+      'api::product.product': ApiProductProduct;
       'api::programming-language.programming-language': ApiProgrammingLanguageProgrammingLanguage;
       'api::project.project': ApiProjectProject;
     }

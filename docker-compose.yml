@@ -7,7 +7,7 @@ services:
     volumes:
       - ./backend:/srv/app
       - ./.tmp:/srv/app/.tmp
-      - ./data/uploads:/srv/app/public/uploads
+      - ./data/uploads:/srv/app/public/uploads // Add this line
     ports:
       - "1337:1337"
     networks:

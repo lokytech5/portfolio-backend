@@ -11,11 +11,6 @@ services:
       - ./data/uploads:/srv/app/public/uploads
     ports:
       - "1337:1337"
-    deploy:
-      resources:
-        limits:
-          cpus: "0.6"
-          memory: 512M
     networks:
       - app-network
 

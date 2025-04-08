@@ -11,7 +11,7 @@ services:
       - ./data/uploads:/srv/app/public/uploads
     ports:
       - "1337:1337"
-    mem_limit: 500m
+    mem_limit: 1g
     cpus: 0.8
     networks:
       - app-network

@@ -12,7 +12,7 @@ services:
     ports:
       - "1337:1337"
     mem_limit: 500m
-    cpus: 0.6
+    cpus: 0.8
     networks:
       - app-network
 

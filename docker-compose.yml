@@ -8,6 +8,7 @@ services:
     volumes:
       - ./backend:/srv/app
       - ./.tmp:/srv/app/.tmp
+      - /mnt/ebs:/srv/app/data
     ports:
       - "1337:1337"
     mem_limit: 1g

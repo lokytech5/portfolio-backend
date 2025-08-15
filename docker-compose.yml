@@ -9,7 +9,6 @@ services:
       - ./backend:/srv/app
       - ./.tmp:/srv/app/.tmp
       - ./public/uploads:/srv/app/public/uploads
-      # - /mnt/ebs:/srv/app/data
     ports:
       - "1337:1337"
     mem_limit: 1g

@@ -19,11 +19,9 @@ module.exports = ({ env }) => [
     config: {
       enabled: true,
       origin: [
-        'http://localhost:3000',  // Local development URL
-        'https://api.guardrecruitment.co.uk', // Production URL
-        'https://portfolio-project-rho-gold.vercel.app', // Fronten URL
-        'https://portfolio-project-rho-gold.vercel.app', // Production URL for frontend
-
+        'http://localhost:3000',
+        'https://api.plugfolio.cloud',                  // your API domain
+        'https://portfolio-project-rho-gold.vercel.app' // your frontend
       ],
     },
   },
